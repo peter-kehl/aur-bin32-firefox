@@ -1,6 +1,6 @@
 pkgbase = bin32-firefox
 	pkgdesc = Standalone web browser from mozilla.org - 32bit version for 64bit systems
-	pkgver = 122.0.1
+	pkgver = 123.0
 	pkgrel = 1
 	url = https://www.mozilla.org/en-US/firefox/
 	arch = x86_64
@@ -15,10 +15,10 @@ pkgbase = bin32-firefox
 	optdepends = lib32-gtk-engines: libclearlooks.so library
 	optdepends = lib32-ffmpeg: extra codec support (x264)
 	optdepends = lib32-pciutils: libpci 32 bit
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/122.0.1/linux-i686/en-US/firefox-122.0.1.tar.bz2
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/123.0/linux-i686/en-US/firefox-123.0.tar.bz2
 	source = firefox32.desktop
 	validpgpkeys = 14F26682D0916CDD81E37B6D61B7B526D98F0353
-	sha256sums = 962bd73ee0f4769c6dc16c93d8ca55f76cff7868e59ada6041e351d3fdefc088
+	sha256sums = 21fb022928f0f7cabde7721162ccbda2bceaadb5f6d921ac807163988e7a1846
 	sha256sums = 8477bb0a22be7fc39fcad1daad444862fac359b74662b447954811fdae1a5bf2
 
 pkgname = bin32-firefox
