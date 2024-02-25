@@ -8,7 +8,7 @@
 # Contributor: Ali Akbar
 
 pkgname=bin32-firefox
-pkgver=122.0
+pkgver=122.0.1
 pkgrel=1
 pkgdesc="Standalone web browser from mozilla.org - 32bit version for 64bit systems"
 arch=('x86_64')
@@ -22,7 +22,10 @@ optdepends=('lib32-librsvg: svg_loader.so library'
             'lib32-pciutils: libpci 32 bit')
 source=(https://download-installer.cdn.mozilla.net/pub/firefox/releases/$pkgver/linux-$_arch/en-US/firefox-$pkgver.tar.bz2
         'firefox32.desktop')
-sha256sums=('d986a5321fd200f22cf6c0104725637712f107ab2b38f34ad61e6712aee3e4d8'
+# sha256 of two files, in this order:
+# - .tar.bz2 for Firefox, as downloaded from above (or from https://ftp.mozilla.org/pub/firefox/releases/$pkgver/linux-$arch/en-US/firefox-$pkgver.tar.bz2), and
+# - firefox32.desktop
+sha256sums=('962bd73ee0f4769c6dc16c93d8ca55f76cff7868e59ada6041e351d3fdefc088'
             '8477bb0a22be7fc39fcad1daad444862fac359b74662b447954811fdae1a5bf2')
 validpgpkeys=('14F26682D0916CDD81E37B6D61B7B526D98F0353') # Mozilla Software Releases <release@mozilla.com>
 
